@@ -5,6 +5,7 @@ import (
 	"math/rand"
 )
 
+// Варианты пила
 func variant() {
 	fmt.Println("Жена пилит:")
 	num := rand.Intn(5)
@@ -23,22 +24,25 @@ func variant() {
 		fmt.Println("Убери дом")
 	}
 }
+
 func Result() {
 	var answer string
-
+	//Функция для функции проверки ответа
 	otvet := func() {
 		fmt.Println("Ты скуф?")
 		fmt.Scan(&answer)
 	}
 
 	otvet()
-
+	//Функция для проверки ответа(если бред)
 	erro := func() {
 		for answer != "Да" && answer != "да" && answer != "Нет" && answer != "нет" {
 			fmt.Println("Не пиши бред, напиши нормально")
 			otvet()
 		}
 	}
+
+	//Функция для проверки ответа(если да)
 	terpila := func() {
 		for answer == "Да" || answer == "да" {
 			variant()
@@ -47,6 +51,7 @@ func Result() {
 		}
 	}
 
+	//Финальная проверка ответа и пил
 	for {
 		if answer == "Нет" || answer == "нет" {
 			fmt.Println("Красава, держи альтушку в подарок!")
@@ -56,7 +61,6 @@ func Result() {
 		} else {
 			erro()
 		}
-
 	}
 
 }

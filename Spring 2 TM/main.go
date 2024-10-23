@@ -1,6 +1,7 @@
 package main
 
 import (
+	"Spring_2_TM/alimony"
 	"Spring_2_TM/area_of_a_square"
 	"Spring_2_TM/factorial"
 	"Spring_2_TM/fair_russia"
@@ -12,28 +13,31 @@ import (
 )
 
 func main() {
-	//first exercise
+	//Вывод Hellow...
 	fmt.Println("Hellow world of warcraft")
 
-	//second exercise
+	//Вычисление площади квадрата
 	area_of_a_square.Areaofsquart()
 
-	//
+	//Предсказание погоды от канала РЕН-ТВ
 	i_am_so_crazy.Weatherrand()
 
-	//
+	//Самый гуманный суд
 	fair_russia.Result()
 
-	//
+	//Конвертация температуры
 	temperature_conversion.Tempconversion()
 
-	//
+	//Лучшая жена
 	wife_witch.Result()
 
-	//
+	//Факториал
 	factorial.Factorial()
 
-	//
+	//Вывод строки по отдельности
 	string_po_num.Stringnum()
+
+	//Не повезло, не фортануло
+	alimony.Alimony()
 
 }
