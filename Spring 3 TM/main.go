@@ -19,7 +19,7 @@ func main() {
 	fmt.Scan(&str1)
 	fmt.Println(scoreofastring.ScoreOfString(str1))
 
-	var str2 = []string{"alice and bob love leetcode", "i think so too", "this is great thanks very much"}
+	var str2 = []string{"alice and bob love CS2", "i can not think echkere", "this is great thanks very much"}
 	fmt.Println(mostwordsfound.MostWordsFound(str2))
 
 	var str3 string
